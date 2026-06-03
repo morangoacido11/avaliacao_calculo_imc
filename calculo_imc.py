@@ -11,4 +11,11 @@ def classificar_imc(valor_imc):
         return "NORMAL"
     else:
         return "ACIMA DO PESO"
-    
+
+#Maria Eduarda pellegrini - status
+def gerar_aviso(status, imc_valor):
+    print(f"seu IMC é: {imc_valor:.2f}")
+    if status == "NORMAL":
+        return "muito bem seu IMC é normal! mantenha-se saudável"
+    else:
+     return "seu IMC é acima de 25.., cultive uma rotina equilibrada! isso manterá sua saúde em dia!!!"
