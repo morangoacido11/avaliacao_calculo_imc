@@ -20,6 +20,14 @@ def gerar_aviso(status, imc_valor):
         return "muito bem seu IMC é normal! mantenha-se saudável"
     else:
      return "seu IMC é acima de 25.., cultive uma rotina equilibrada! isso manterá sua saúde em dia!!!"
+
 #Ana Gabriely - Variaveis (peso,altura)
 peso = float(input("Insira seu peso: "))
 altura = float(input("Insira sua altura: "))
+
+#Maria Eduarda pellegrini - imc e status (denovo)
+imc_calculado = calcular_imc(peso, altura)
+status = classificar_imc(imc_calculado)
+mensagem = gerar_aviso(status imc_calculado)
+
+print(mensagem)
